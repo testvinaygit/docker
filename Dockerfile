@@ -1,6 +1,7 @@
-FROM centos:latest
+FROM centos:7
 MAINTAINER name at sdlc
 RUN yum -y install httpd
 COPY index.html /var/www/html/
 CMD [“/usr/sbin/httpd”, “-D”, “FOREGROUND”]
 EXPOSE 80
+
