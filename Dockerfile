@@ -1,7 +1,7 @@
-FROM centos:7
-MAINTAINER name at sdlc
-RUN yum -y install httpd
-COPY index.html /var/www/html/
-CMD [“/usr/sbin/httpd”, “-D”, “FOREGROUND”]
-EXPOSE 80
+FROM python:3.9-slim
+COPY . /app
+WORKDIR /app
+RUN pip install --no-cache-dir -r requirements.txt
+CMD ["python", "app.py"]
+
 
