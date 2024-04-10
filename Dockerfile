@@ -1,7 +1,6 @@
-FROM python:3.9-slim
-WORKDIR /app
-COPY . /APP
-RUN pip install --no-cache-dir -r requirements.txt
+FROM centos:latest
+MAINTAINER name at sdlc
+RUN yum -y install httpd
+COPY index.html /var/www/html/
+CMD [“/usr/sbin/httpd”, “-D”, “FOREGROUND”]
 EXPOSE 80
-ENV NAME world
-CMD ["python", "app.py"]
