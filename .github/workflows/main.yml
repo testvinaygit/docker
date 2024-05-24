@@ -27,4 +27,4 @@ jobs:
         with:
           context: DockerFileFolder/   or .
           push: true
-          tags: manabhub/testrepo:latest
+          tags: vinaykumar75/git
