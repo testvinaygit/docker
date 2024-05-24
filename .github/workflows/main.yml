@@ -3,7 +3,7 @@ name: ci test
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
 
 jobs:
   bake:
