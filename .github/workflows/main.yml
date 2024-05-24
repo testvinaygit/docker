@@ -27,4 +27,4 @@ jobs:
         with:
           context: DockerFileFolder/   or .
           push: true
-          tags: vinaykumar75/git
+          tags: vinaykumar75/vinay:latest
