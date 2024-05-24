@@ -20,7 +20,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.dockerhub_username }}
-          password: ${{ secrets.dockerhub_token }}
+          password: ${{ secrets.dockerhub_password }}
       -
         name: Build and push
         uses: docker/bake-action@v4
